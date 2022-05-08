@@ -17,6 +17,10 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/index', [
-    'as' => 'index', 'uses' => 'HomeController@index'
+$router->get('/pokeneas/random', [
+    'as' => 'index', 'uses' => 'PokeneaController@generalData'
+]);
+
+$router->get('/pokeneas/random/image', [
+    'as' => 'index', 'uses' => 'PokeneaController@imageAndPhrase'
 ]);
