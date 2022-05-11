@@ -21,6 +21,6 @@ $router->get('/pokeneas/random', [
     'as' => 'index', 'uses' => 'PokeneaController@generalData'
 ]);
 
-$router->get('/pokeneas/random/image', [
+$router->get('/pokeneas/image/random', [
     'as' => 'index', 'uses' => 'PokeneaController@imageAndPhrase'
 ]);
